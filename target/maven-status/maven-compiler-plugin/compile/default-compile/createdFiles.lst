@@ -1,0 +1,17 @@
+model\entity\EstadoDelProyecto.class
+model\service\CampoService.class
+model\repository\LoteRepository.class
+model\entity\EstadoCampo.class
+model\entity\Campo.class
+model\repository\CampoRepository.class
+model\entity\Empresa.class
+model\entity\ProyectoDeCultivo.class
+model\entity\EstadoLote.class
+model\entity\SecuenciaLaboreo.class
+model\entity\RegistroLaboreo.class
+model\entity\Cultivo.class
+controller\Main.class
+model\entity\Laboreo.class
+model\entity\TipoDeSuelo.class
+model\entity\Lote.class
+model\entity\Provincia.class
