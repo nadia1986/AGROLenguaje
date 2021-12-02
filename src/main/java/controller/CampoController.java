@@ -8,6 +8,6 @@ package controller;
  *
  * @author nadia
  */
-public class AdminsitrarCampoController {
+public class CampoController {
     
 }

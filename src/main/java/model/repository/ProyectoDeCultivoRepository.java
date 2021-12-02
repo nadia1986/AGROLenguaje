@@ -36,11 +36,33 @@ public class ProyectoDeCultivoRepository {
 
     }
 
-    public List<ProyectoDeCultivo> findAll() {
+    public List<ProyectoDeCultivo> findAllProyectos() {
         return proyectoDeCultivos;
     }
 
-   
+    public void modificarEstadoProyecto( int numeroProyecto, EstadoDelProyecto estadoDelProyecto){
+        
+        Lote  loteEncontrado= buscarPorIdLote (idLote);
+        if (loteEncontrado != null){
+            loteEncontrado.setEstadoLote(estadoLote);
+            
+        }
+        
+    }
+    
+    public ProyectoDeCultivo buscarPorNumeroProyecto(int numeroProyecto){
+        ProyectoDeCultivo proyectoEncontrado= null;
+        
+        for (ProyectoDeCultivo proyectoB : this.proyectoDeCultivos) {
+            if (numeroProyecto.equals(proyectoB.getNumeroProyecto())){
+                proyectoEncontrado= proyectoB;
+            }
+            
+        }
+        
+        return loteEncontrado;
+    }
+
         
          
 

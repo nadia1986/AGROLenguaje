@@ -24,7 +24,7 @@ public class Main {
         LoteController loteController = new LoteController();
 
         var opcion = -1;
-        var scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         while (opcion != 0) {
             System.out.println("Elige una opcion: \n"
@@ -47,13 +47,15 @@ public class Main {
                     System.out.println("Ingrese idLote a buscar");
                     var buscarLote = scanner.nextLine();
                     loteController.buscar(buscarLote);
+                    //loteController.listarLotes(); ????? no aparece la lista de lotes!!!!!
                     break;
                 case 3:
                     System.out.println("Ingrese Numero de Proyecto de cultivo");
                     var buscarProyecto = scanner.nextLine();
                     break;
                 case 0:
-                    System.out.println("Hasta Pronto!");
+                    System.out.println("Saludos!");
+                    // loteController.listarTodosLosLotes();
                     break;
                 default:
                     System.out.println("Opcion no reconocida");
@@ -66,7 +68,7 @@ public class Main {
         //for (Campo campoEncontrado : campoEncontrados) {
         //System.out.println(campoEncontrado.getSuperficie());
         //System.out.println(campoEncontrado.getUnaProvincia());
-        //System.out.println(campoEncontrado.getLotes());
+        //System.out.println(campoEncontrado.getLotes()); NO APARECE LISTA DE LOTES QUE TIENE EL CAMPO
         //}
         // for ( Lote lotesEncontrado: lotesEncontrados){
         // System.out.println(loteEncontrado.getCampo());

@@ -26,12 +26,16 @@ public class LoteService {
         return repository.buscarPorIdLote(IdLote);
     }
     
+    public List<Lote> Listar (){
+        return repository.findAll();
+    }
+    
     //QUE CAMBIOS HAY QUE HACER EN EL METODO???
     
-    public Lote modificarEstado(String IdLote , EstadoLote estadoLote){
-        return repository.cargarLotes();
+   // public Lote modificarEstado(String IdLote , EstadoLote estadoLote){
+        //return repository.cargarLotes();
         
-    }
+   // }
     
     
     

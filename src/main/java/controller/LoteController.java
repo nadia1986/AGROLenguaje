@@ -1,9 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package controller;
 
+import java.util.List;
+import model.entity.Lote;
 import model.service.LoteService;
 
 /**
@@ -11,19 +9,27 @@ import model.service.LoteService;
  * @author nadia
  */
 public class LoteController {
-      private LoteService servicioLote;
+
+    private LoteService servicioLote;
 
     public LoteController() {
         servicioLote = new LoteService();
+
     }
 
-    public boolean buscar(String idLote){
+    public boolean buscar(String idLote) {
         boolean estado = false;
-        if (servicioLote.buscar(idLote)!= null){
+        if (servicioLote.buscar(idLote) != null) {
             System.out.println("Lote encontrado");
-        }else{
+        } else {
             System.out.println("error");
         }
         return estado;
     }
+
+    public List<Lote> listarLotes() {
+        return servicioLote.Listar();
+        
+    }
+
 }
