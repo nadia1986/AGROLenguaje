@@ -17,10 +17,10 @@ public class ProyectoDeCultivoRepository {
 
     public ProyectoDeCultivoRepository() {
         this.proyectoDeCultivos = new ArrayList<>();
-        cargarProyectoDeCultivos();
+        cargarProyectos();
     }
 
-    public void cargarProyectoDeCultivos() {
+    public void cargarProyectos() {
         LoteRepository lote = new LoteRepository();
 
         EstadoDelProyecto estadoProyecto1 = new EstadoDelProyecto("En preparacion");
@@ -42,9 +42,9 @@ public class ProyectoDeCultivoRepository {
 
     public void modificarEstadoProyecto( int numeroProyecto, EstadoDelProyecto estadoDelProyecto){
         
-        Lote  loteEncontrado= buscarPorIdLote (idLote);
-        if (loteEncontrado != null){
-            loteEncontrado.setEstadoLote(estadoLote);
+       ProyectoDeCultivo  proyectoEncontrado= buscarPorNumeroProyecto(numeroProyecto);
+        if (proyectoEncontrado != null){
+            proyectoEncontrado.setEstadoDelProyecto(estadoDelProyecto);
             
         }
         
@@ -54,13 +54,13 @@ public class ProyectoDeCultivoRepository {
         ProyectoDeCultivo proyectoEncontrado= null;
         
         for (ProyectoDeCultivo proyectoB : this.proyectoDeCultivos) {
-            if (numeroProyecto.equals(proyectoB.getNumeroProyecto())){
+            if (numeroProyecto==proyectoB.getNumeroProyecto()){
                 proyectoEncontrado= proyectoB;
             }
             
         }
         
-        return loteEncontrado;
+        return proyectoEncontrado;
     }
 
         

@@ -28,7 +28,6 @@ public class ProyectoDeCultivo {
         this.estadoDelProyecto = estadoDelProyecto;
         this.lote = lote;
         this.numeroProyecto= numeroProyecto;
-
         this.registrosLaboreos = new ArrayList<>();
 
     }
