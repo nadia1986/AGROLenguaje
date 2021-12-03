@@ -11,6 +11,7 @@ import model.service.LoteService;
 public class LoteController {
 
     private LoteService servicioLote;
+    private Lote lotes;
 
     public LoteController() {
         servicioLote = new LoteService();

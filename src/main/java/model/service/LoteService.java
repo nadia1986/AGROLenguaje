@@ -33,9 +33,9 @@ public class LoteService {
     //QUE CAMBIOS HAY QUE HACER EN EL METODO???
     
    // public Lote modificarEstado(String IdLote , EstadoLote estadoLote){
-        //return repository.cargarLotes();
+       // return repository.modificarEstadoLote(IdLote, estadoLote);
         
-   // }
+    //}
     
     
     

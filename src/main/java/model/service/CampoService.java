@@ -11,20 +11,17 @@ import model.repository.CampoRepository;
  * @author nadia
  */
 public class CampoService {
-        private CampoRepository repository;
+        private CampoRepository repositorio;
 
     public CampoService() {
-        this.repository = new CampoRepository();
+        this.repositorio = new CampoRepository();
     }
 
-    public List<Campo> buscarcampoPorNombre(String nombre){
-        List<Campo> camposEncontrados = new ArrayList<>();
-
-        for (Campo campoR : repository.findAllCampo()) {
-            if (campoR.getNombre().contains(nombre)) {
-                camposEncontrados.add(campoR);
-            }
-        }
-        return camposEncontrados;
+   public Campo buscarCampo(String nombre){
+       return repositorio.buscarPorNombre(nombre);
+   }
+   
+    public List<Campo> Listar (){
+        return repositorio.findAllCampo();
     }
 }

@@ -62,9 +62,9 @@ public class CampoRepository {
     public Campo buscarPorNombre(String nombre){
         Campo campoEncontrado= null;
         
-        for (Campo campo  : this.campos) {
-            if (nombre.equals(campo.getNombre())){
-                campoEncontrado= campo;
+        for (Campo campoR  : this.campos) {
+            if (nombre.equals(campoR.getNombre())){
+                campoEncontrado= campoR;
             }
             
         }

@@ -13,7 +13,7 @@ import model.entity.ProyectoDeCultivo;
  */
 public class ProyectoDeCultivoRepository {
 
-    List<ProyectoDeCultivo> proyectoDeCultivos;
+    List <ProyectoDeCultivo> proyectoDeCultivos;
 
     public ProyectoDeCultivoRepository() {
         this.proyectoDeCultivos = new ArrayList<>();
@@ -36,7 +36,7 @@ public class ProyectoDeCultivoRepository {
 
     }
 
-    public List<ProyectoDeCultivo> findAllProyectos() {
+    public List<ProyectoDeCultivo> mostrarProyectos() {
         return proyectoDeCultivos;
     }
 

@@ -15,9 +15,10 @@ import model.repository.ProyectoDeCultivoRepository;
 public class ProyectoDeCultivoService {
     private ProyectoDeCultivoRepository repositorio;
 
-    public ProyectoDeCultivoService(ProyectoDeCultivoRepository repositorio) {
-        this.repositorio = repositorio;
-    }
+   // public ProyectoDeCultivoService() {
+        
+       // this.repositorio = new ProyectoDeCultivoRepository;
+   // }
     
     public ProyectoDeCultivo buscarProyecto( int numeroProyecto){
         return repositorio.buscarPorNumeroProyecto(numeroProyecto);
