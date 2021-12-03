@@ -77,4 +77,10 @@ public class Lote {
         this.estadoLote = estadoLote;
     }
 
+    @Override
+    public String toString() {
+        return "Lote{" + "idLote=" + idLote + ", superficieLote=" + superficieLote + ", tipoDeSuelo=" + tipoDeSuelo + ", proyectosDeCultivos=" + proyectosDeCultivos + ", campo=" + campo + ", estadoLote=" + estadoLote + '}';
+    }
+    
+
 }

@@ -94,6 +94,7 @@ public class Main {
                             System.out.println("Ingrese idLote de lote a buscar");
                             var buscarLote = scanner.nextLine();
                             loteController.buscar(buscarLote);
+                            
                             break;
                         case 2:
                             break;

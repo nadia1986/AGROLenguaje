@@ -73,6 +73,11 @@ public class Campo {
         return lotes;
     }
 
+    @Override
+    public String toString() {
+        return "Campo{" + "nombre=" + nombre + ", superficie=" + superficie + ", empresa=" + empresa + ", provincia=" + provincia + ", estadoCampo=" + estadoCampo + ", lotes=" + lotes + '}';
+    }
+
   
 
 

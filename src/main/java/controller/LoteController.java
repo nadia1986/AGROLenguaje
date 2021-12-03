@@ -22,6 +22,8 @@ public class LoteController {
         boolean estado = false;
         if (servicioLote.buscar(idLote) != null) {
             System.out.println("Lote encontrado");
+            System.out.println(servicioLote.buscar(idLote).getEstadoLote());
+           // System.out.println(servicioLote.buscar(idLote).getProyectosDeCultivos());
         } else {
             System.out.println("error");
         }

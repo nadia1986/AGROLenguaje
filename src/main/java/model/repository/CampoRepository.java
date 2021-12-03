@@ -25,7 +25,7 @@ public class CampoRepository {
         Provincia provincia = new Provincia("Corrientes");
         Provincia provincia2 = new Provincia("Misiones");
         Provincia provincia3 = new Provincia("Santa Fé");
-         EstadoCampo ocupado = new EstadoCampo("Ocupado. Campo sembrado");
+        EstadoCampo ocupado = new EstadoCampo("Ocupado. Campo sembrado");
         EstadoCampo disponible = new EstadoCampo(" Campo Disponible");
 
         Campo a1 = new Campo("La Cachuera ", "800 ha ", empresa, provincia, ocupado);
@@ -36,41 +36,40 @@ public class CampoRepository {
         this.campos.add(a2);
         this.campos.add(a3);
 
-        
     }
-     
-    public List<Campo> findAll(){
+
+    public List<Campo> findAll() {
         return campos;
     }
-    
-    public void crearCampo(Campo campo){
+
+    public void crearCampo(Campo campo) {
         this.campos.add(campo);
     }
-    
-    public void eliminarCampo(Campo campo){
+
+    public void eliminarCampo(Campo campo) {
         this.campos.remove(campo);
     }
-    
-    public void modificarEstadoCampo( String nombre, EstadoCampo estadoCampo){
-        
-        Campo  campoEncontrado= buscarPorNombre (nombre);
-        if (campoEncontrado != null){
+
+    public void modificarEstadoCampo(String nombre, EstadoCampo estadoCampo) {
+
+        Campo campoEncontrado = buscarPorNombre(nombre);
+        if (campoEncontrado != null) {
             campoEncontrado.setEstadoCampo(estadoCampo);
-            
+
         }
-        
+
     }
-    
-    public Campo buscarPorNombre(String nombre){
-        Campo campoEncontrado= null;
-        
-        for (Campo campoR  : this.campos) {
-            if (nombre.equals(campoR.getNombre())){
-                campoEncontrado= campoR;
+
+    public Campo buscarPorNombre(String nombre) {
+        Campo campoEncontrado = null;
+
+        for (Campo campoR : this.campos) {
+            if (nombre.equals(campoR.getNombre())) {
+                campoEncontrado = campoR;
             }
-            
+
         }
-        
+
         return campoEncontrado;
     }
 
