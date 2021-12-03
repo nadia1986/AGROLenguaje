@@ -10,12 +10,11 @@ import model.service.ProyectoDeCultivoService;
  *
  * @author nadia
  */
-public class ProyectoControlller {
-    
-     private ProyectoDeCultivoService serviProyecto;
+public class ProyectoController {
+    private ProyectoDeCultivoService serviProyecto;
 
-    public ProyectoControlller(ProyectoDeCultivoService serviProyecto) {
-        this.serviProyecto = serviProyecto;
+    public ProyectoController() {
+        this.serviProyecto = new ProyectoDeCultivoService();
     }
 
     

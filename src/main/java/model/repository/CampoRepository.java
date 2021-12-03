@@ -25,19 +25,21 @@ public class CampoRepository {
         Provincia provincia = new Provincia("Corrientes");
         Provincia provincia2 = new Provincia("Misiones");
         Provincia provincia3 = new Provincia("Santa Fé");
+         EstadoCampo ocupado = new EstadoCampo("Ocupado. Campo sembrado");
+        EstadoCampo disponible = new EstadoCampo(" Campo Disponible");
 
-        Campo a1 = new Campo("La cachuera ", "800 ha ", empresa, provincia, null);
-        Campo a2 = new Campo("Los Paraisos", "500 ha ", empresa, provincia2, null);
-        Campo a3 = new Campo("Los Naranjitos", "1100ha", empresa, provincia3, null);
+        Campo a1 = new Campo("La Cachuera ", "800 ha ", empresa, provincia, ocupado);
+        Campo a2 = new Campo("Los Paraisos", "500 ha ", empresa, provincia2, disponible);
+        Campo a3 = new Campo("Los Naranjitos", "1100ha", empresa, provincia3, ocupado);
 
-        campos.add(a1);
-        campos.add(a2);
-        campos.add(a3);
+        this.campos.add(a1);
+        this.campos.add(a2);
+        this.campos.add(a3);
 
         
     }
      
-    public List<Campo> findAllCampo(){
+    public List<Campo> findAll(){
         return campos;
     }
     

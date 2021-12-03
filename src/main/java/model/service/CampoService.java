@@ -22,6 +22,6 @@ public class CampoService {
    }
    
     public List<Campo> Listar (){
-        return repositorio.findAllCampo();
+        return repositorio.findAll();
     }
 }

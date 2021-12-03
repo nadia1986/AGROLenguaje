@@ -65,6 +65,10 @@ public class Empresa {
         return campos;
     }
 
+    public void setCampos(List<Campo> campos) {
+        this.campos = campos;
+    }
+
   
 
 }

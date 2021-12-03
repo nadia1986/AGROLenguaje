@@ -36,9 +36,9 @@ public class LoteRepository {
         Lote norte2 = new Lote("C-002", "250 ha ", tipoDeSuelo2, campo.campos.get(1), estadoLoteDisponible);
         Lote norte3 = new Lote("C-003", "300 ha", tipoDeSuelo1, campo.campos.get(1), estadoLoteOcupado);
 
-        lotes.add(norte1);
-        lotes.add(norte2);
-        lotes.add(norte3);
+       this.lotes.add(norte1);
+        this.lotes.add(norte2);
+        this.lotes.add(norte3);
 
     }
     

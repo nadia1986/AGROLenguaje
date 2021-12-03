@@ -23,10 +23,12 @@ public class Main {
         //List<Campo> campoEncontrados = service.buscarcampoPorNombre("La cachuera ");
         LoteController loteController = new LoteController();
         CampoController campoController = new CampoController();
+        ProyectoController proyectoController = new ProyectoController();
 
         int opcion = -1;
         int numero = -1;
-        int numero1= -1;
+        int numero1 = -1;
+        int numero3 = -1;
         Scanner scanner = new Scanner(System.in);
 
         while (opcion != 0) {
@@ -51,7 +53,7 @@ public class Main {
                     numero = Integer.parseInt(scanner.nextLine());
 
                     switch (numero) {
-                        case 1:
+                        case 1:// BUSCA PERO IMPRIME NO ENCONTRADO
                             System.out.println("Ingrese nombre de Campo a buscar");
                             var buscarCampo = scanner.nextLine();
                             campoController.buscar(buscarCampo);
@@ -66,7 +68,7 @@ public class Main {
                             break;
                         case 0:
                             System.out.println("Saludos!");
-                            
+
                             break;
                         default:
                             System.out.println("Opcion no reconocida");
@@ -103,7 +105,7 @@ public class Main {
                             break;
                         case 0:
                             System.out.println("Saludos!");
-                            
+
                             break;
                         default:
                             System.out.println("Opcion no reconocida");
@@ -112,14 +114,15 @@ public class Main {
                     }
                     //System.out.println("Ingreso a 
                     //System.out.println("Ingrese idLote a buscar");
-                   // var buscarLote = scanner.nextLine();
+                    // var buscarLote = scanner.nextLine();
                     //loteController.buscar(buscarLote);
                     //loteController.listarLotes(); //????? no aparece la lista de lotes!!!!!
                     break;
                 case 3:
                     System.out.println("Ingrese Numero de Proyecto de cultivo");
-                    var buscarProyecto = scanner.nextLine();
-                    // proyectoController.
+                    numero3 = Integer.parseInt(scanner.nextLine());
+
+                    proyectoController.buscar(numero3);
                     break;
                 case 0:
                     System.out.println("Saludos!");

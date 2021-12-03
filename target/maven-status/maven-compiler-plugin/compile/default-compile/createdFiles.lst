@@ -1,4 +1,5 @@
 model\repository\ProyectoDeCultivoRepository.class
+controller\ProyectoController.class
 model\service\CampoService.class
 model\repository\LoteRepository.class
 model\service\LoteService.class
@@ -12,7 +13,6 @@ model\entity\Laboreo.class
 model\entity\TipoDeSuelo.class
 model\entity\Lote.class
 model\entity\Provincia.class
-controller\ProyectoControlller.class
 model\entity\EstadoDelProyecto.class
 model\entity\EstadoCampo.class
 model\entity\Campo.class

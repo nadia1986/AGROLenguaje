@@ -11,8 +11,8 @@ public class Campo {
 
     private String nombre;
     private String superficie;
-    private Empresa unaEmpresa;
-    private Provincia unaProvincia;
+    private Empresa empresa;
+    private Provincia provincia;
     private EstadoCampo estadoCampo;
     private List<Lote> lotes;
 
@@ -20,12 +20,12 @@ public class Campo {
         this.lotes = new ArrayList<>();
     }
 
-    public Campo(String nombre, String superficie, Empresa unaEmpresa, Provincia unaProvincia, EstadoCampo unEstadoCampo) {
+    public Campo(String nombre, String superficie, Empresa empresa, Provincia provincia, EstadoCampo estadoCampo) {
         this.nombre = nombre;
         this.superficie = superficie;
-        this.unaEmpresa = unaEmpresa;
-        this.unaProvincia = unaProvincia;
-        this.estadoCampo = unEstadoCampo;
+        this.empresa = empresa;
+        this.provincia = provincia;
+        this.estadoCampo = estadoCampo;
         this.lotes = new ArrayList<>();
     }
 
@@ -46,27 +46,27 @@ public class Campo {
     }
 
     public Empresa getUnaEmpresa() {
-        return unaEmpresa;
+        return empresa;
     }
 
     public void setUnaEmpresa(Empresa unaEmpresa) {
-        this.unaEmpresa = unaEmpresa;
+        this.empresa = unaEmpresa;
     }
 
     public Provincia getUnaProvincia() {
-        return unaProvincia;
+        return provincia;
     }
 
     public void setUnaProvincia(Provincia unaProvincia) {
-        this.unaProvincia = unaProvincia;
+        this.provincia = unaProvincia;
     }
 
     public EstadoCampo getEstadoCampo() {
         return estadoCampo;
     }
 
-    public void setEstadoCampo(EstadoCampo unEstadoCampo) {
-        this.estadoCampo = unEstadoCampo;
+    public void setEstadoCampo(EstadoCampo estadoCampo) {
+        this.estadoCampo = estadoCampo;
     }
 
     public List<Lote> getLotes() {
