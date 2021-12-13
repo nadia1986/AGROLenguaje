@@ -82,6 +82,11 @@ public class ProyectoDeCultivo {
         this.registrosLaboreos = registrosLaboreos;
     }
 
+    @Override
+    public String toString() {
+        return "ProyectoDeCultivo{" + "numeroProyecto=" + numeroProyecto + ", fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + ", estadoDelProyecto=" + estadoDelProyecto + ", registrosLaboreos=" + registrosLaboreos + ", lote=" + lote + '}';
+    }
+
  
 
 }

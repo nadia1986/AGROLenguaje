@@ -24,7 +24,7 @@ public class LoteService {
     }
     
     public List<Lote> Listar (){
-        return repository.findAll();
+        return repository.listar();
     }
     
     //QUE CAMBIOS HAY QUE HACER EN EL METODO???

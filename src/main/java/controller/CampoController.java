@@ -21,14 +21,14 @@ public class CampoController {
 
     }
 
-    public boolean buscar(String nombreB) {
-        boolean estado = false;
+    public Campo  buscar(String nombreB) {
+        
         if (serviCampo.buscarCampo(nombreB) != null) {            
-            System.out.println("Campo encontrado");           
+            return    serviCampo.buscarCampo(nombreB);       
         } else {
-            System.out.println("Error");
+            return null;
         }
-        return estado;
+        
     }
 
     //public List<Lote> listarLotes() {

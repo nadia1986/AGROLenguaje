@@ -42,7 +42,7 @@ public class LoteRepository {
 
     }
     
-    public List<Lote> findAll(){
+    public List<Lote> listar(){
         return lotes;
     }
     

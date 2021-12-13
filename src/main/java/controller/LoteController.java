@@ -34,5 +34,12 @@ public class LoteController {
         return servicioLote.Listar();
         
     }
+   // for (Object elemento : miLista) {
+           // System.out.println("elemento = " + elemento);
+       // }
+
+       // miLista.forEach(elemento -> {
+           // System.out.println("elemento = " + elemento);
+        //});
 
 }

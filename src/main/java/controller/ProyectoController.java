@@ -4,6 +4,7 @@
  */
 package controller;
 
+import model.entity.ProyectoDeCultivo;
 import model.service.ProyectoDeCultivoService;
 
 /**
@@ -12,21 +13,22 @@ import model.service.ProyectoDeCultivoService;
  */
 public class ProyectoController {
     private ProyectoDeCultivoService serviProyecto;
+    private ProyectoDeCultivo proyectoDeCultivos;
 
     public ProyectoController() {
         this.serviProyecto = new ProyectoDeCultivoService();
     }
 
     
-    public boolean buscar(int  numeroProyecto) {
-        boolean estado = false;
-        if (serviProyecto.buscarProyecto(numeroProyecto) != null) {
-            System.out.println("Proyecto encontrado");
+    public ProyectoDeCultivo buscar(int numeroProyectoB) {
+        
+        if (serviProyecto.buscarProyecto(numeroProyectoB) != null) {            
+            return    serviProyecto.buscarProyecto(numeroProyectoB);       
         } else {
-            System.out.println("Error al cargar numero proyecto");
+            return null;
         }
-        return estado;
-    }
+        
 
     
+}
 }

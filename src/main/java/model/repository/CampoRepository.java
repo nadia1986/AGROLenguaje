@@ -28,7 +28,7 @@ public class CampoRepository {
         EstadoCampo ocupado = new EstadoCampo("Ocupado. Campo sembrado");
         EstadoCampo disponible = new EstadoCampo(" Campo Disponible");
 
-        Campo a1 = new Campo("La Cachuera ", "800 ha ", empresa, provincia, ocupado);
+        Campo a1 = new Campo("La Cachuera", "800 ha ", empresa, provincia, ocupado);
         Campo a2 = new Campo("Los Paraisos", "500 ha ", empresa, provincia2, disponible);
         Campo a3 = new Campo("Los Naranjitos", "1100ha", empresa, provincia3, ocupado);
 
@@ -60,11 +60,11 @@ public class CampoRepository {
 
     }
 
-    public Campo buscarPorNombre(String nombre) {
+    public Campo buscarPorNombre(String nombreB) {
         Campo campoEncontrado = null;
 
         for (Campo campoR : this.campos) {
-            if (nombre.equals(campoR.getNombre())) {
+            if (nombreB.equals(campoR.getNombre())) {
                 campoEncontrado = campoR;
             }
 

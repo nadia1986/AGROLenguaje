@@ -17,8 +17,8 @@ public class CampoService {
         this.repositorio = new CampoRepository();
     }
 
-   public Campo buscarCampo(String nombre){
-       return repositorio.buscarPorNombre(nombre);
+   public Campo buscarCampo(String nombreB){
+       return repositorio.buscarPorNombre(nombreB);
    }
    
     public List<Campo> Listar (){
