@@ -24,3 +24,4 @@ model\repository\CultivoRepository.class
 controller\CampoController.class
 model\service\ProyectoDeCultivoService.class
 controller\Main.class
+controller\MenuController.class
